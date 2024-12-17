@@ -14,6 +14,34 @@ The dataset consists of 2357 images of malignant and benign oncological diseases
 
 The data set contains the following diseases:
 
+![datasetdf](https://github.com/vikrant19y/Melanoma_Detection/blob/main/ReadMe_Images/Count.png)
 
+![datasetplot](https://github.com/vikrant19y/Melanoma_Detection/blob/main/ReadMe_Images/Plot_count.png)
 
+To overcome the issue of class imbalance, used a python package Augmentor (https://augmentor.readthedocs.io/en/master/) to add more samples across all classes so that none of the classes have very few samples.
+
+## Sample Image from Dataset
+![SampleImages](https://github.com/vikrant19y/Melanoma_Detection/blob/main/ReadMe_Images/Visualization.png)
+
+## CNN Architecture Design
+
+To classify skin cancer using skin lesion images, I developed a custom CNN model for higher accuracy. Key components include:
+
+- Rescaling Layer: Normalizes input data from the [0, 255] range to [0, 1].
+- Convolutional Layer: Applies convolutions to extract features, reducing image size while retaining key information.
+- Pooling Layer: Reduces the dimensions of feature maps to decrease computation and parameters.
+- Dropout Layer: Randomly sets input units to 0 to prevent overfitting.
+- Flatten Layer: Converts feature maps into a 1D array for the fully connected layer.
+- Dense Layer: Deeply connected layer where each neuron receives input from all neurons in the previous layer.
+- Activation Functions:
+    - ReLU: Outputs positive input directly, aiding faster learning by overcoming the vanishing gradient problem.
+    - Softmax: Used in the output layer to predict probabilities, ensuring outputs range between 0 and 1 and sum to 1.
+
+### Model Architecture
+
+![modelArchitecture](https://github.com/vikrant19y/Melanoma_Detection/blob/main/ReadMe_Images/model_plot.png)
+
+![outputplot](https://github.com/vikrant19y/Melanoma_Detection/blob/main/ReadMe_Images/output.png)
+
+## Model Evaluation
 
