@@ -45,3 +45,6 @@ To classify skin cancer using skin lesion images, I developed a custom CNN model
 
 ## Model Evaluation
 
+![Accuracy_plot](https://github.com/vikrant19y/Melanoma_Detection/blob/main/ReadMe_Images/Model_Accuracy.png)
+
+
